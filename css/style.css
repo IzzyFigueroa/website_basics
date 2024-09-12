@@ -1,0 +1,51 @@
+/* RESETS */
+body {
+    /* background: red; */
+    margin: 0;
+    font-family: sans-serif;
+}
+ 
+h3 {margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* CUSTOM STYLES */
+
+
+header {
+    /* Align the direct children on a row left to right*/
+    display: flex;
+    /* Once you set display: flex, you can align items vertically and horizontally with flexbox properties */
+    /* Align items will align the direct children on the y-axis (top to bottom)*/
+    align-items: center;
+    /*Push the direct children as far as possible, using the space between them (x-axis)*/
+    /* justify-content: space-between; */
+    background: #1a1a2ce6;
+    padding: 25px 7% 20px;
+}
+
+
+header nav {margin-left: 150px;
+}
+
+header a {
+    color: #e47200;
+}
+
+header a:hover, header a.active  {
+    text-decoration: underline;
+}
+
+
+header nav a {
+     color: #fff;
+}
+
+/* Select all links with the nav except the last one */
+header nav a:not(:last-child) {
+    margin-right: 10px
+}
+

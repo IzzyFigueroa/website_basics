@@ -1,8 +1,14 @@
+/* VARIABLES */
+:root {
+    --green: rgb(3, 212, 3);
+}
+
 /* RESETS */
 body {
-    /* background: red; */
+    background: rgb(60, 74, 140);
     margin: 0;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
  
 h3 {margin: 0;
@@ -11,6 +17,26 @@ h3 {margin: 0;
 a{
     text-decoration: none;
 }
+
+/* ANIMATIONS */
+@keyframes slide-in {
+    from {
+        transform: translateX(-300%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* @keyframes bounce {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+} */
 
 /* CUSTOM STYLES */
 
@@ -48,4 +74,69 @@ header nav a {
 header nav a:not(:last-child) {
     margin-right: 10px
 }
+aside a {
+    transform: rotate(90deg);
+}
 
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 3% 0 10% ; 
+}
+
+section p {
+    color: var(--green);
+}
+
+section h1 {
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0 0 25px;
+    animation: slide-in 1s;
+}
+
+section button {
+    background: none;
+    border: 2px solid var(--green);
+    padding: 0   0   0   15px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all .4s ;
+}
+
+section button i {
+    color: #1a1a2ce6;
+    font-size: 1.5rem;
+    background: var(--green);
+    padding: 10px 15px;
+    margin-left: 15px
+}
+
+section button:hover {
+background: rgb(3, 212, 3);
+color: #1a1a2ce6;
+transform: translateX(10px);
+} 
+
+aside {
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+    position: relative;
+    left: 75px;
+}
+
+
+aside p {
+    color: var(--green);
+    margin-right: 15px;
+}
+
+aside i {
+    color: #fff;
+    margin-right: 8px;
+}

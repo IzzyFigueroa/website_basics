@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>Website Basics</title>
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
        <link rel="stylesheet" href="./css/style.css">
     </head>
     
@@ -15,23 +15,26 @@
 
             <nav> 
                 <a href="./about.html">About</a>
+                <a href="./Portfolio.html">Portfolio</a>
+                <a href="./Blog.html">Blog</a>
                 <a href="./contact.html">Contact</a>
             </nav>
         </header>
 
         <main>
             <section>
+                <!--  This is how you add inline styles` -->
                 <!-- <p style="color:orange; background-color: lightseagreen;">Hello Everyone.</p> -->
                 <p>Hello Everyone.</p>
                 <h1>I'm Izzy Figueroa</h1>
-                <button>Software Developer</button>
+                <button >Software Developer <i class="fa-solid fa-arrow-right"></i></button>
             </section>
             
-            <aside>
+            <aside class="rotate active">
                 <p>Contact Me</p>
-                <button>P</button>
-                <button>E</button>
-                <button>W</button>
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-solid fa-globe"></i>
             </aside>
         </main>
     </body>
